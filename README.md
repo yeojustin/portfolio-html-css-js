@@ -5,4 +5,4 @@
 - Expected completed date: EOY 23
 - Expected tech stacks to be used includes React and Tailwind.
 
-![portfolio-v1](https://i.imgur.com/W46cUtz.gifv)
+![portfolio-v1]([https://i.imgur.com/W46cUtz.gifv](https://imgur.com/W46cUtz)https://imgur.com/W46cUtz)
