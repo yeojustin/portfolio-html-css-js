@@ -1,6 +1,6 @@
 # portfolio-html-css-js-v1
 
-## Current v1 without react and tailwind. Working on full implementation. Expected compleetion by the end of year.
+## Current Version 1.0
+# Tech: Only used Vanilla JS, CSS and HTML
 
-
-![portfolio-v1](https://imgur.com/a/pBhOMVO)
+![portfolio-v1](https://i.imgur.com/W46cUtz.gifv)
