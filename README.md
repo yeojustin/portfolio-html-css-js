@@ -1,8 +1,8 @@
 # portfolio-html-css-js-v1
 
 # Current Version 1.0
-- Tech stacks: Only used Vanilla JS, CSS and HTML
+- Current tech stacks: Only used Vanilla JS, CSS and HTML
 - Expected completed date: EOY 23
 - Expected tech stacks to be used includes React and Tailwind.
 
-![portfolio-v1]([https://i.imgur.com/W46cUtz.gifv](https://imgur.com/W46cUtz)https://imgur.com/W46cUtz)
+![portfolio-v1.0](https://imgur.com/W46cUtz)
