@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <!-- <nav id="desktop-nav">
+        <div class="logo">Yeo Justin</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Projects</a></li>
+                <li><a href="#project">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+       </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Yeo Justin</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#project" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+
+            <div class="horizontal-logo-links">
+                <a href="#github">
+                    <img src="./assets/github.png" class="icon">
+                </a>
+                <a href="#linkedin"></a>
+            </div>
+        </div>
+    </nav> -->
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Yeo Justin profile picture"/>
+        </div>
+
+        <div class="section__text">
+            <p class="section__text__p1">Hello world.</p>
+            <h1 class="title">I'm Justin</h1>
+
+            <div class="autotype-text-container">
+                <p class="section__text__autotype">
+                    Aspiring
+                    <span class="auto-type"></span>
+                </p>
+            </div>
+
+            <div class = "btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf', '_blank')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact me
+                </button>
+            </div>
+
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="my linkedin profile" class="icon", onclick="window.open('https://www.linkedin.com/in/justinyeo177/', '_blank')">
+                <img src="./assets/github.png" alt="my github profile" class="icon", onclick="window.open('https://github.com/yeojustin', '_blank')">     
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</body>
+</html>

@@ -1,0 +1,357 @@
+/* GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(85,85,85);
+}
+
+/* TRANSTION */
+
+a, 
+.btn {
+    transition: all 300ms ease;
+}
+
+/* DESKTOP */
+
+nav,
+.nav-links {
+    display: flex; /* flex box */
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh; /* 17% of the whole screen */
+}
+
+.nav-links {
+    gap: 2rem; /* rem: a form a measurement, like px for fonts */
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a {
+    color: black;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    text-decoration: none;
+    text-decoration-color: white;
+    /* box-shadow: inset 0 0 0 0 white; */
+}
+
+a:hover {
+    box-shadow: 3px 5px 0 0 rgb(255, 0, 0);
+    background-color: black;
+    color: white;
+    transition: color .2s ease-in-out, box-shadow .2s ease-out;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav {
+    display: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    transition: color .2s ease-in-out, box-shadow .2s ease-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: color .2s ease-in-out, box-shadow .2s ease-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color .2s ease-in-out, box-shadow .2s ease-out;
+}
+
+.menu-links a:hover {
+    box-shadow: 3px 5px 0 0 rgb(255, 0, 0);
+    background-color: black;
+    color: white;
+    transition: color .2s ease-in-out, box-shadow .2s ease-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+    padding: 10px;
+    width: 100%;
+    list-style: none;
+    background: grey;
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+    /* Creating an 'X' when clicked */
+}
+
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px); 
+    /* Creating an 'X' when clicked */
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+.hamburger-icon span:first-child {
+    opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+/* To edit later */ 
+
+.horizontal-logo-links {
+    display: flex;
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontal-logo-links a {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.horizontal-logo-links a:hover {
+    color: red; /* Change the color on hover */
+    transition: color .2s ease-in-out, box-shadow .2s ease-out;
+}
+
+
+/* SECTIONS */
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+/* PROFILE */
+
+#profile {
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    gap: 5rem;
+}
+
+.section__pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+    
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    animation: glowing 1s infinite alternate;
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 5px red;
+    }
+    100% {
+        box-shadow: 0 0 20px red;
+    }
+}
+
+.section__text {
+    align-self: center;
+    text-align: center;
+}
+
+.section__text p {
+    font-weight: 600;
+}
+
+.section__text__p1 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.title {
+    margin-top: 0.5rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+
+/* AUTOTYPE TEXTS */
+
+.section__text__autotype {
+    font-size: 1.7rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.autotype-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px; 
+    white-space: nowrap;
+}
+
+.auto-type {
+    color: red;
+}
+
+/* ICONS */
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* BUTTONS */
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    /* border-radius: 2rem; */
+}
+
+.btn-color-1,
+.btn-color-2 {
+    background: none;
+    border: grey 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+    cursor: pointer;
+}
+
+/* .btn-color-1,
+.btn-color-2:hover {
+    background: rgb(53,53,53);
+} */
+
+.btn-color-1:hover {
+    background:rgb(0,0,0);
+    color: white;
+    box-shadow: 2px 3px 0 0 rgb(255, 0, 0);
+}
+
+.btn-color-2 {
+    background: none;
+}
+
+.btn-color-2:hover {
+    background:rgb(0,0,0);
+    color: white;
+    box-shadow: 2px 3px 0 0 rgb(255, 0, 0);
+}
+
+
+/* ABOUT SECTION 
+
+#about {
+    position: relative;
+}
+
+.about-container, 
+.about-details-cotainer {   
+    display: flex;
+}
+
+.about-container {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-cotainer {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.arrow {
+    position: absolute;
+} */
